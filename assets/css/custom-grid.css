@@ -1,0 +1,99 @@
+:root{
+  --space-size: 1rem;
+  --count-colum: 12;
+}
+.container{
+  --padding-value: calc(var(--space-size)/2);
+  width:100%;
+  padding-left: var(--padding-value);
+  padding-right: var(--padding-value);
+  margin-left: auto;
+  margin-right:auto;
+}
+  
+.row{
+ display:flex;
+ flex-wrap:wrap;
+}
+.row > *{
+  padding-left: var(--padding-value);
+  padding-right: var(--padding-value);
+  margin-left: calc(var(--padding-value)* -1);
+  margin-right: calc(var(--padding-value)* -1);
+}
+.col-1{
+ --size: calc(100% / var(--count-colum)) * 1;
+ flex-basis: var(--size);
+ max-width: var(--size);
+}
+.col-2{
+  --size: calc(100% / var(--count-colum)) * 2;
+  flex-basis: var(--size);
+  max-width: var(--size);
+}
+.col-3{
+  --size: calc(100% / var(--count-colum)) * 3;
+  flex-basis: var(--size);
+  max-width: var(--size);
+}
+.col-4{
+  --size: calc(100% / var(--count-colum)) * 4;
+  flex-basis: var(--size);
+  max-width: var(--size);
+}
+.col-5{
+  --size: calc(100% / var(--count-colum)) * 5;
+  flex-basis: var(--size);
+  max-width: var(--size);
+}
+.col-6{
+  --size: calc(100% / var(--count-colum)) * 6;
+  flex-basis: var(--size);
+  max-width: var(--size);
+}
+.col-7{
+  --size: calc(100% / var(--count-colum)) * 7;
+  flex-basis: var(--size);
+  max-width: var(--size);
+}
+.col-8{
+  --size: calc(100% / var(--count-colum)) * 8;
+  flex-basis: var(--size);
+  max-width: var(--size);
+}
+.col-9{
+  --size: calc(100% / var(--count-colum)) * 9;
+  flex-basis: var(--size);
+  max-width: var(--size);
+}
+.col-10{
+  --size: calc(100% / var(--count-colum)) * 10;
+  flex-basis: var(--size);
+  max-width: var(--size);
+}
+.col-11{
+  --size: calc(100% / var(--count-colum)) * 11;
+  flex-basis: var(--size);
+  max-width: var(--size);
+}
+.col-12{
+  --size: calc(100% / var(--count-colum)) * 12;
+  flex-basis: var(--size);
+  max-width: var(--size);
+}
+@media screen and (min-width:576px){
+.container{
+  width:540px;
+  }
+}
+@media screen and (min-width:768px){
+  .container{
+    width:720px;
+  }
+}
+@media screen and (min-width:768px){
+  .container{
+    width:720px;
+  }
+}  
+
